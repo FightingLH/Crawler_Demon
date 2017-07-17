@@ -15,6 +15,7 @@
 		EB8612A21F1CA166009FC83F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8612A01F1CA166009FC83F /* LaunchScreen.storyboard */; };
 		EB8612AD1F1CA166009FC83F /* CrawlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8612AC1F1CA166009FC83F /* CrawlerTests.m */; };
 		EB8612B81F1CA166009FC83F /* CrawlerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8612B71F1CA166009FC83F /* CrawlerUITests.m */; };
+		EB8612D81F1CA1EA009FC83F /* libspidersdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8612D71F1CA1EA009FC83F /* libspidersdk.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,22 @@
 		EB8612B31F1CA166009FC83F /* CrawlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrawlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8612B71F1CA166009FC83F /* CrawlerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrawlerUITests.m; sourceTree = "<group>"; };
 		EB8612B91F1CA166009FC83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB8612C81F1CA1EA009FC83F /* dsbridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsbridge.h; sourceTree = "<group>"; };
+		EB8612C91F1CA1EA009FC83F /* DSCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCircleProgressView.h; sourceTree = "<group>"; };
+		EB8612CA1F1CA1EA009FC83F /* dSpider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dSpider.h; sourceTree = "<group>"; };
+		EB8612CB1F1CA1EA009FC83F /* DSpiderDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSpiderDataView.h; sourceTree = "<group>"; };
+		EB8612CC1F1CA1EA009FC83F /* DSpiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSpiderViewController.h; sourceTree = "<group>"; };
+		EB8612CD1F1CA1EA009FC83F /* DSWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWaveView.h; sourceTree = "<group>"; };
+		EB8612CE1F1CA1EA009FC83F /* DUIwebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIwebview.h; sourceTree = "<group>"; };
+		EB8612CF1F1CA1EA009FC83F /* DWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWebview.h; sourceTree = "<group>"; };
+		EB8612D01F1CA1EA009FC83F /* DWKwebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWKwebview.h; sourceTree = "<group>"; };
+		EB8612D11F1CA1EA009FC83F /* JavaScriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptBridge.h; sourceTree = "<group>"; };
+		EB8612D21F1CA1EA009FC83F /* JSBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBUtil.h; sourceTree = "<group>"; };
+		EB8612D31F1CA1EA009FC83F /* JSBWebEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBWebEventDelegate.h; sourceTree = "<group>"; };
+		EB8612D41F1CA1EA009FC83F /* spidersdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spidersdk.h; sourceTree = "<group>"; };
+		EB8612D51F1CA1EA009FC83F /* SpiderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiderUtil.h; sourceTree = "<group>"; };
+		EB8612D61F1CA1EA009FC83F /* SpiderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiderView.h; sourceTree = "<group>"; };
+		EB8612D71F1CA1EA009FC83F /* libspidersdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspidersdk.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8612D81F1CA1EA009FC83F /* libspidersdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +119,7 @@
 		EB8612911F1CA166009FC83F /* Crawler */ = {
 			isa = PBXGroup;
 			children = (
+				EB8612C51F1CA1EA009FC83F /* sdk-ios */,
 				EB8612951F1CA166009FC83F /* AppDelegate.h */,
 				EB8612961F1CA166009FC83F /* AppDelegate.m */,
 				EB8612981F1CA166009FC83F /* ViewController.h */,
@@ -138,6 +157,45 @@
 				EB8612B91F1CA166009FC83F /* Info.plist */,
 			);
 			path = CrawlerUITests;
+			sourceTree = "<group>";
+		};
+		EB8612C51F1CA1EA009FC83F /* sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				EB8612C61F1CA1EA009FC83F /* include */,
+				EB8612D71F1CA1EA009FC83F /* libspidersdk.a */,
+			);
+			path = "sdk-ios";
+			sourceTree = "<group>";
+		};
+		EB8612C61F1CA1EA009FC83F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EB8612C71F1CA1EA009FC83F /* spidersdk */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EB8612C71F1CA1EA009FC83F /* spidersdk */ = {
+			isa = PBXGroup;
+			children = (
+				EB8612C81F1CA1EA009FC83F /* dsbridge.h */,
+				EB8612C91F1CA1EA009FC83F /* DSCircleProgressView.h */,
+				EB8612CA1F1CA1EA009FC83F /* dSpider.h */,
+				EB8612CB1F1CA1EA009FC83F /* DSpiderDataView.h */,
+				EB8612CC1F1CA1EA009FC83F /* DSpiderViewController.h */,
+				EB8612CD1F1CA1EA009FC83F /* DSWaveView.h */,
+				EB8612CE1F1CA1EA009FC83F /* DUIwebview.h */,
+				EB8612CF1F1CA1EA009FC83F /* DWebview.h */,
+				EB8612D01F1CA1EA009FC83F /* DWKwebview.h */,
+				EB8612D11F1CA1EA009FC83F /* JavaScriptBridge.h */,
+				EB8612D21F1CA1EA009FC83F /* JSBUtil.h */,
+				EB8612D31F1CA1EA009FC83F /* JSBWebEventDelegate.h */,
+				EB8612D41F1CA1EA009FC83F /* spidersdk.h */,
+				EB8612D51F1CA1EA009FC83F /* SpiderUtil.h */,
+				EB8612D61F1CA1EA009FC83F /* SpiderView.h */,
+			);
+			path = spidersdk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +265,7 @@
 				TargetAttributes = {
 					EB86128E1F1CA166009FC83F = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C78VJKGV2J;
 						ProvisioningStyle = Automatic;
 					};
 					EB8612A71F1CA166009FC83F = {
@@ -426,8 +485,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C78VJKGV2J;
 				INFOPLIST_FILE = Crawler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crawler/sdk-ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = feeyo.Crawler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -437,8 +501,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C78VJKGV2J;
 				INFOPLIST_FILE = Crawler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crawler/sdk-ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = feeyo.Crawler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
